@@ -8,21 +8,12 @@
 * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
 body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.7; }
 .container { max-width: 1100px; margin: auto; padding: 0 25px; }
-.section-padding { padding: 100px 0; }
-.section-title { text-align: center; margin-bottom: 60px; font-size: 2.5rem; color: var(--primary); }
+.section-padding { padding: 80px 0; }
+.section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: var(--primary); }
 
-/* VERTEXNEXTGEN All-Caps Logo Style */
-.logo { 
-    font-weight: 800; 
-    font-size: 1.6rem; 
-    letter-spacing: 1px; 
-    color: var(--white); 
-}
-
-.logo span { 
-    color: var(--accent); /* This is your Cyber Teal */
-    font-weight: 400;      /* Slightly lighter for a sleek look */
-}
+/* Logo Styling */
+.logo { font-weight: 800; font-size: 1.6rem; letter-spacing: 2px; color: var(--white); }
+.logo span { color: var(--accent); font-weight: 400; }
 
 header { background: var(--primary); padding: 18px 0; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 nav { display: flex; justify-content: space-between; align-items: center; }
@@ -38,24 +29,31 @@ nav { display: flex; justify-content: space-between; align-items: center; }
 .highlight { color: var(--accent); }
 .trust-badge { display: inline-block; border: 1.5px solid var(--accent); padding: 8px 20px; border-radius: 50px; margin-bottom: 35px; font-weight: 600; font-size: 0.8rem; }
 .hero-btns { display: flex; justify-content: center; gap: 20px; }
-.btn-primary { background: var(--accent); color: white; padding: 16px 35px; text-decoration: none; border-radius: 6px; font-weight: 700; transition: 0.3s; }
-.btn-secondary { border: 2px solid white; color: white; padding: 14px 35px; text-decoration: none; border-radius: 6px; font-weight: 700; transition: 0.3s; }
+.btn-primary { background: var(--accent); color: white; padding: 16px 35px; text-decoration: none; border-radius: 6px; font-weight: 700; transition: 0.3s; display: inline-block; }
+.btn-secondary { border: 2px solid white; color: white; padding: 14px 35px; text-decoration: none; border-radius: 6px; font-weight: 700; transition: 0.3s; display: inline-block; }
 
-/* Services Card Style */
+/* Cards */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; }
 .card { padding: 45px; border: 1px solid #eee; border-radius: 15px; transition: 0.4s; background: var(--white); text-align: center; }
-.card h3 { margin: 15px 0; color: var(--primary); }
-.card .icon { font-size: 2.5rem; }
+.card .icon { font-size: 2.5rem; margin-bottom: 15px; }
 .card:hover { transform: translateY(-10px); border-color: var(--accent); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
 
-/* About Section Styling */
+/* About Section */
 .about-bg { background: #f9fbfc; padding: 100px 0; }
 .divider { width: 60px; height: 4px; background: var(--accent); margin-bottom: 40px; }
 .about-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; }
-.about-text p { margin-bottom: 20px; font-size: 1.1rem; color: #444; }
 .summary-box { background: white; padding: 30px; border-radius: 12px; margin-bottom: 20px; border-left: 5px solid var(--accent); box-shadow: 0 5px 15px rgba(0,0,0,0.03); }
 
-/* Footer & WhatsApp Button */
+/* Process Section */
+.process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center; }
+.step-num { width: 60px; height: 60px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 800; font-size: 1.2rem; }
+
+/* CTA Card */
+.cta-card { background: var(--primary); color: white; padding: 60px; border-radius: 20px; text-align: center; box-shadow: 0 15px 35px rgba(27, 38, 59, 0.3); }
+.cta-card h2 { font-size: 2.2rem; margin-bottom: 20px; }
+.cta-card p { margin-bottom: 30px; opacity: 0.9; }
+
+/* WhatsApp & Footer */
 footer { background: var(--dark); color: white; padding: 60px 0; text-align: center; font-size: 0.9rem; }
 .whatsapp-float { position: fixed; bottom: 40px; right: 40px; background: #25d366; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3); }
 .whatsapp-float img { width: 35px; }
@@ -65,4 +63,5 @@ footer { background: var(--dark); color: white; padding: 60px 0; text-align: cen
     .about-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
     .hero-btns { flex-direction: column; }
+    .cta-card { padding: 40px 20px; }
 }
