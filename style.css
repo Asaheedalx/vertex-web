@@ -73,16 +73,18 @@ ul { list-style: none; }
     margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.3);
 }
 .hero h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; font-weight: 800; }
-.subheadline { font-size: 1.15rem; margin-bottom: 30px; opacity: 0.9; }
+.subheadline { font-size: 1.15rem; margin-bottom: 20px; opacity: 0.9; }
 
 .hero-credentials { display: flex; gap: 20px; justify-content: center; margin-bottom: 30px; font-size: 0.9rem; color: #ddd; }
 .hero-credentials i { color: var(--accent); margin-right: 5px; }
 
-.btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+.btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;}
 .btn-primary { background: var(--primary); color: var(--white); padding: 12px 30px; border-radius: 5px; font-weight: 600; }
 .btn-primary:hover { background: var(--primary-dark); }
 .btn-whatsapp { background: var(--whatsapp); color: var(--white); padding: 12px 30px; border-radius: 5px; font-weight: 600; }
 .btn-whatsapp:hover { background: #1da851; }
+
+.hero-note { font-size: 0.9rem; opacity: 0.8; font-style: italic; margin-top: 10px; }
 
 /* =========================================
    4. CREDIBILITY STRIP
@@ -95,7 +97,7 @@ ul { list-style: none; }
 /* =========================================
    5. SECTIONS GENERAL
    ========================================= */
-.about-section, .services-section, .split-section { padding: 80px 0; }
+.about-section, .services-section, .split-section, .work-section { padding: 80px 0; }
 .section-header { text-align: center; margin-bottom: 50px; }
 .section-header h2 { font-size: 2.2rem; margin-bottom: 10px; }
 .line { width: 60px; height: 4px; background: var(--primary); margin: 0 auto; }
@@ -119,7 +121,6 @@ ul { list-style: none; }
 }
 .service-card:hover { transform: translateY(-5px); border-color: var(--primary); }
 
-/* New Icon Styling */
 .service-icon-wrapper {
     width: 70px; height: 70px;
     background: var(--icon-bg);
@@ -142,7 +143,23 @@ ul { list-style: none; }
 .card-btn:hover { background: var(--primary); }
 
 /* =========================================
-   7. PROCESS & CLIENTS
+   7. RECENT WORK & EXPECTATIONS (NEW)
+   ========================================= */
+.work-section { background: var(--white); }
+.work-content { max-width: 800px; margin: 0 auto; text-align: center; }
+.work-list { list-style: none; text-align: left; margin: 30px auto; max-width: 700px; }
+.work-list li { margin-bottom: 15px; display: flex; gap: 15px; }
+.work-list i { color: var(--whatsapp); margin-top: 5px; }
+.work-note { font-style: italic; color: #777; margin-top: 20px; }
+
+.expectations-section { background: var(--primary); color: white; padding: 40px 0; text-align: center; }
+.expectations-section h3 { margin-bottom: 20px; font-size: 1.5rem; }
+.expect-grid { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+.expect-item { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+.expect-item i { color: var(--accent); }
+
+/* =========================================
+   8. PROCESS & CLIENTS
    ========================================= */
 .split-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
 .process-col h3, .clients-col h3 { margin-bottom: 20px; font-size: 1.5rem; color: var(--primary); }
@@ -153,17 +170,19 @@ ul { list-style: none; }
     border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;
 }
 
-.client-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.client-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
 .client-tags span {
     background: #eef6ff; color: var(--secondary); padding: 8px 15px;
     border-radius: 20px; font-size: 0.9rem; border: 1px solid #dae1e7;
 }
+.location-box { background: #f9f9f9; padding: 15px; border-radius: 8px; font-size: 0.95rem; }
 
 /* =========================================
-   8. CONTACT & FOOTER
+   9. CONTACT & FOOTER
    ========================================= */
 .contact-section { padding: 80px 0; background: var(--white); text-align: center; }
-.contact-wrapper h2 { margin-bottom: 30px; }
+.contact-wrapper h2 { margin-bottom: 10px; }
+.contact-note { margin-bottom: 30px; color: #555; max-width: 600px; margin-left: auto; margin-right: auto; }
 .contact-methods { display: flex; justify-content: center; gap: 40px; margin-bottom: 30px; }
 .method { display: flex; align-items: center; gap: 10px; font-size: 1.1rem; }
 .method i { color: var(--primary); }
@@ -171,12 +190,12 @@ ul { list-style: none; }
 
 footer { background: #111; color: #777; padding: 40px 0; font-size: 0.9rem; }
 .footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
-.reg-number { color: #aaa; margin-bottom: 5px; }
+.reg-number { color: #aaa; margin-bottom: 5px; font-weight: bold; }
 .footer-links a { color: #777; margin-left: 20px; }
 .footer-links a:hover { color: white; }
 
 /* =========================================
-   9. MOBILE RESPONSIVE
+   10. MOBILE RESPONSIVE
    ========================================= */
 @media (max-width: 768px) {
     .nav-links { display: none; }
@@ -184,9 +203,10 @@ footer { background: #111; color: #777; padding: 40px 0; font-size: 0.9rem; }
     .hero { height: auto; padding: 100px 0; }
     .cred-grid { flex-direction: column; }
     .split-grid { grid-template-columns: 1fr; }
+    .expect-grid { flex-direction: column; gap: 15px; }
     .footer-content { flex-direction: column; text-align: center; }
     .footer-links { margin: 0; }
     .footer-links a { margin: 0 10px; }
     .contact-methods, .action-buttons { flex-direction: column; gap: 15px; }
-    .service-card { padding: 25px 20px; } /* Slightly smaller padding on mobile */
+    .service-card { padding: 25px 20px; }
 }
