@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Vertex Nextgen Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Vertex Nextgen Solutions Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <a href="contact.html?service=consultation" class="btn btn-primary nav-btn" class="btn btn-primary nav-btn">Consultation</a>
+        </div>
+    </nav>
+
+    <header class="page-header bg-light">
+        <div class="container text-center">
+            <h1>Contact Vertex Nextgen Solutions</h1>
+            <p class="section-intro">Organizations interested in improving their digital systems or automating business processes can reach out for a consultation.</p>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container grid-2">
+            
+            <div class="contact-info-blocks">
+                <h2>Get in Touch</h2>
+                <p>Reach out directly using the details below, or fill out the form to send us a message. We aim to respond to all business inquiries promptly.</p>
+                
+                <div class="info-card mt-40">
+                    <div class="info-icon">
+                        <i data-feather="mail"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4>Email Us</h4>
+                        <a href="mailto:info@vertexnextgen.com.ng">info@vertexnextgen.com.ng</a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i data-feather="phone"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4>Call Us</h4>
+                        <a href="tel:+2348139489798">+234 813 948 9798</a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/2348139489798" target="_blank">Chat with us immediately</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3>Request a Consultation</h3>
+                <p>Fill out the form below and our system will process your inquiry immediately.</p>
+                
+                <form id="vertexContactForm" action="/api/contact" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="E.g. Obi Umar Adewale" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="E.g. my@company.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number (WhatsApp)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="E.g. +234 800 000 0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service" >Service of Interest</label>
+                        <select id="service" name="service" class="btn btn-primary nav-btn" required>
+                            <option value="General Consultation">General Consultation</option>
+                            <option value="Starter Solution">Starter Solution</option>
+                            <option value="Business Digital Systems">Business Digital Systems</option>
+                            <option value="Workflow Automation">Workflow Automation</option>
+                            <option value="Operational Dashboards">Operational Dashboards</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">How can we help structure your systems?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Briefly describe your business and operational needs..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full form-submit">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Vertex Nextgen Solutions</h3>
+                <p>Structured Digital Systems for Modern Operations.</p>
+                <p class="footer-desc">We help businesses organize operations, automate workflows, and build simple digital systems that support daily work.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i data-feather="mail"></i> <a href="mailto:info@vertexnextgen.com.ng">info@vertexnextgen.com.ng</a></p>
+                <p><i data-feather="phone"></i> <a href="tel:+2348139489798">+234 813 948 9798</a></p>
+                <p><i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.2rem; margin-right: 10px;"></i> <a href="https://wa.me/2348139489798">Chat on WhatsApp</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Vertex Nextgen Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+      feather.replace()
+    </script>
+    <script>
+        // 1. Auto-select the dropdown based on the URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceParam = urlParams.get('service');
+        const serviceDropdown = document.getElementById('service');
+
+        if (serviceDropdown) {
+            if (serviceParam === 'starter') serviceDropdown.value = 'Starter Solution';
+            if (serviceParam === 'systems') serviceDropdown.value = 'Business Digital Systems';
+            if (serviceParam === 'automation') serviceDropdown.value = 'Workflow Automation';
+            if (serviceParam === 'dashboards') serviceDropdown.value = 'Operational Dashboards';
+            if (serviceParam === 'consultation') serviceDropdown.value = 'General Consultation';
+        }
+
+        // 2. Handle the Form Submission
+        document.getElementById('vertexContactForm').addEventListener('submit', async (e) => {
+            e.preventDefault(); 
+            
+            const form = e.target;
+            const submitBtn = form.querySelector('.form-submit');
+            const originalText = submitBtn.innerText;
+            
+            submitBtn.innerText = 'Sending...';
+            submitBtn.style.opacity = '0.7';
+
+            // Include the new service field in the data sent to the backend
+            const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                phone: form.phone.value,
+                service: form.service.value, // Captured here!
+                message: form.message.value
+            };
+
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    submitBtn.innerText = 'Message Sent Successfully!';
+                    submitBtn.style.backgroundColor = '#25D366'; 
+                    submitBtn.style.borderColor = '#25D366';
+                    form.reset(); 
+                    
+                    // Reset the dropdown back to whatever brought them to the page
+                    if (serviceParam && serviceDropdown) {
+                        const event = new Event('DOMContentLoaded');
+                        document.dispatchEvent(event);
+                    }
+                } else {
+                    submitBtn.innerText = 'Error. Please try again.';
+                }
+            } catch (error) {
+                submitBtn.innerText = 'Error. Please check connection.';
+            }
+
+            setTimeout(() => {
+                submitBtn.innerText = originalText;
+                submitBtn.style.opacity = '1';
+                submitBtn.style.backgroundColor = '';
+                submitBtn.style.borderColor = '';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
